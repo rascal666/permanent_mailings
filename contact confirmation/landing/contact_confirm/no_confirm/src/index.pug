@@ -1,0 +1,24 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "удалить сайт"
+	body.js-body
+		.main_content.main_content-pp
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								.header__heading.section_h1 Благодарим за ваш отклик!
+								.offer
+									p Ваш сайт будет перемещен в архив до конца 2022 года. Если вы все же захотите добавить актуальный номер телефона, чтобы клиенты могли дозвониться, свяжитесь с нами любым из указанных способов (в верхнем правом углу).
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/297725/content_frame_1142.png")
+		//- include ./modules/footer.pug
+	//- p {crm_analytics:show_page(network_actions,ПП_Новый_год_Бонусы_curData)}

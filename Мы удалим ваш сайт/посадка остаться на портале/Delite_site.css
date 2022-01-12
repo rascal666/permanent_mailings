@@ -1,0 +1,206 @@
+/* Сброс врапперов*/
+
+body {
+    min-width: 0 !important;
+    background-color: white;
+}
+
+.wrapper-text p {
+    margin-bottom: 0em;
+    margin-bottom: 0px;
+}
+
+.base-width {
+    background-color: transparent;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+}
+
+.wrapper-text ul {
+    margin: 0px;
+    padding: 0px 0px 56px 0px;
+}
+
+.wrapper-text ul li {
+    padding: 0 0 24px;
+}
+
+.catalogue {
+    padding: 0;
+}
+
+.cms-page .col-middle {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0 !important;
+}
+
+.catalogue h1 {
+    display: none;
+}
+
+#content {
+    margin-top: 0;
+}
+
+.wrapper-text ul li {
+    list-style-type: none !important;
+}
+
+.wrapper-text table td {
+    padding: 20px;
+}
+
+.simple-breadcrumbs {
+    display: none !important;
+}
+
+
+/* --- */
+
+.heading_Button {
+    border-radius: 3px;
+    padding: 15px 40px;
+    width: fit-content;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #0492DE !important;
+    white-space: normal !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #0492DE;
+    border-radius: 3px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.heading_Button_blue {
+    border-radius: 3px;
+    padding: 15px 40px;
+    width: fit-content;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF !important;
+    white-space: normal !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: #0492DE;
+    border: 1px solid #0492DE;
+    border-radius: 3px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/201548/content_ipsum_4.jpg') no-repeat 100% 100%/ cover;
+    font-size: 16px;
+    letter-spacing: 0.05px;
+    line-height: 30px;
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.coll_me_futer {
+    border-bottom: 1px dotted #5E7491;
+}
+
+.heading_1 {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.text_h2 {
+    font-size: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.text_h3 {
+    font-size: 16px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.paddingB40 {
+    padding-bottom: 40px;
+}
+
+.paddingB25 {
+    padding-bottom: 25px;
+}
+
+.paddingB60 {
+    padding-bottom: 60px;
+}
+
+.marginB60 {
+    margin-bottom: 60px;
+}
+
+.content_bg {
+    background: linear-gradient(#ffffff70, #ffffffd1);
+}
+
+.wrapper_content {
+    max-width: 1366px;
+    width: 90%;
+    margin: auto;
+    color: #5E7491;
+    padding-top: 60px;
+}
+
+.futer_main {
+    max-width: 1920px;
+    background: #ffffff00;
+    /* color: #443d3d; */
+    letter-spacing: 0.04em;
+    font-family: 'Open Sans', sans-serif;
+    color: #5E7491;
+}
+
+.agreement a {
+    color: #5E7491;
+}
+
+@media (max-width:1060px) {
+    .content_bg {
+        background: #ffffffe0;
+    }
+}
+
+@media (max-width:760px) {
+    .heading_1 {
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+    .paddingB60 {
+        padding-bottom: 20px;
+    }
+    .wrapper_content {
+        padding-top: 60px;
+    }
+    .marginB60 {
+        margin-bottom: 40px;
+    }
+    .futer_main {
+        padding-top: 40px;
+    }
+    .heading_Button {
+        padding: 15px 20px;
+    }
+    .paddingB40 {
+        padding-bottom: 20px;
+    }
+}

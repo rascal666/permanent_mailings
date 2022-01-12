@@ -1,0 +1,29 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "удалить сайт"
+	body.js-body
+		.main_content.main_content-pp
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								.header__icon
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/297743/content_subtract.png", alt="")
+								.header__heading.section_h1 Благодарим за ваш отклик!
+								.offer
+									p Подтвердите номер телефона, чтобы клиенты с Пульса цен могли связаться с вами.
+								+button("{crm_analytics:click_link(Подтвердить номер,https://www.pulscen.ru/about/packets,network_actions,НК_Подтв_телефона_curData)}", "Подтвердить номер", "section-buttonAccent")
+							.header__img
+								p.section_h3.header__wigth Подключите платное размещение, чтобы продажи пошли активнее.
+								p.header__wigth Пульс цен сегодня — это сервис для ведения бизнеса в интернете. Здесь есть тарифы под любые бизнес-задачи и рекламный бюджет, инструменты для привлечения покупателей и база готовых заявок, оптовых и розничных.
+								a.section-button.header__wigth(href="https://www.pulscen.ru/about/packets" target="_blank") Посмотреть тарифы размещения
+		include ./modules/footer.pug
+	p {crm_analytics:show_page(network_actions,НК_Подтв_телефона_curData)}
