@@ -66,11 +66,17 @@
 
 
 @media (max-width: 1440px) {
+	.main_content {
+		background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/298122/content_group_1048.png") no-repeat 55% 0%/1920px;
+		height: auto;
+	}
+    
 }
 
 @media (max-width: 1366px) {
 	.main_content {
 		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/298122/content_group_1048.png) no-repeat 62% 0%/1920px;
+		height: auto;
 	}
 }
 
@@ -79,9 +85,6 @@
 		--section: 40px;
 		--block: 24px;
 	}
-}
-
-@media (max-width: 800px) {
 	.header__wrapper {
 		grid-template-columns: 1fr;
 		justify-items: center;
@@ -108,6 +111,10 @@
 	.list__list{
 		font-size: 14px;
 	}
+}
+
+@media (max-width: 800px) {
+	
 }
 
 @media (max-width: 660px) {

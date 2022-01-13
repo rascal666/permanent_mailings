@@ -30,8 +30,8 @@ html(lang="ru")
 										.list__li готовый продающий сайт, который работает сразу и обслуживается нашими специалистами
 										.list__li доступ к сервисам продвижения (ремаркетинг, реклама в Google и др.)
 										.list__li личный менеджер поддержки
-									+buttonLink("Посмотреть тарифы на размещение", "Посмотреть тарифы на размещение", "section-buttonAccent", "https://ekb.pulscen.ru/about/packets")
+									+buttonEvent("{crm_analytics:click_link(Посмотреть тарифы на размещение,#order,network_actions,НК_Оставить_товары_Тарифы_curData)}", "Посмотреть тарифы на размещение", "section-buttonAccent", "https://ekb.pulscen.ru/about/packets")
 							.header__img
 								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/298124/content_illyustratsiya.png")
 		//- include ./modules/footer.pug
-	//- p {crm_analytics:show_page(network_actions,ПП_Новый_год_Бонусы_curData)}
+	p {crm_analytics:show_page(network_actions,НК_Оставить_товары_curData)}
