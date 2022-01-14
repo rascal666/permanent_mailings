@@ -60,8 +60,13 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: './src/index.pug',
+            filename: "delite_goods.html",
+            template: './src/delite_goods.pug',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            filename: "save_goods.html",
+            template: './src/save_goods.pug',
             inject: 'body'
         }),
         new HtmlWebpackPugPlugin(),

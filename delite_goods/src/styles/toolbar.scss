@@ -53,10 +53,9 @@
 		margin-right: 10px;
 		color: #fff;
 	}
-	.logo{
+	.logo {
 		width: 150px;
 	}
-
 }
 
 @media (max-width: 1200px) {
@@ -102,13 +101,13 @@
 				grid-template-columns: auto auto;
 			}
 		}
-		.toolbar__icon{
+		.toolbar__icon {
 			display: flex;
 			grid-gap: 8px;
-			img{
-				width: 20px;
+			img {
+				width: 23px;
 			}
-			a{
+			a {
 				margin: 0px 0px;
 			}
 		}
@@ -122,10 +121,10 @@
 			font-size: 24px;
 		}
 	}
-	.logo{
+	.logo {
 		width: 147px;
 	}
-	.logo__wrapper{
+	.logo__wrapper {
 		width: 26px;
 		overflow: hidden;
 	}

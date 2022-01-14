@@ -6,40 +6,55 @@
 	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/298122/content_group_1048.png') no-repeat 2% 0%/1920px;
 	height: 100vh;
 }
+.main_content-delite {
+	@include mainContent(16px, rgb(255, 255, 255));
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/298322/content_group_1152.png') no-repeat 2% 0%/1920px;
+	height: 100vh;
+	.header__wrapper {
+		align-items: center;
+		grid-template-columns: 1.5fr 1fr;
+	}
+	.offer {
+		max-width: 100%;
+	}
+	.header__text {
+		margin-top: 0vw !important;
+	}
+}
 
 * {
 	scroll-behavior: smooth;
 }
 
-.header__wrapper{
-	@include grid (2vw, 1.8fr 1fr);
+.header__wrapper {
+	@include grid(2vw, 1.8fr 1fr);
 	margin-top: 30px;
-	.header__text{
+	.header__text {
 		margin-top: 3vw;
 	}
 	.header__img {
-    position: relative;
-    right: -4vw;
-		img{
-			max-width:100%;
+		position: relative;
+		right: -4vw;
+		img {
+			max-width: 100%;
 		}
 	}
-	.mobile__img{
+	.mobile__img {
 		display: none;
 	}
-	.list{
+	.list {
 		color: $main_text_color;
 		font-size: 16px;
 		margin-top: 7vw;
-		.list__list{
-			@include grid(15px, repeat(auto-fit, minmax(285px, 1fr)))
+		.list__list {
+			@include grid(15px, repeat(auto-fit, minmax(285px, 1fr)));
 		}
 	}
-	.section-buttonAccent{
+	.section-buttonAccent {
 		margin-top: 1vw;
 	}
 }
-.offer{
+.offer {
 	margin-top: 30px;
 	max-width: 520px;
 	grid-gap: 16px;
@@ -64,13 +79,11 @@
 @media (min-width: 1920px) {
 }
 
-
 @media (max-width: 1440px) {
 	.main_content {
-		background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/298122/content_group_1048.png") no-repeat 55% 0%/1920px;
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/298122/content_group_1048.png') no-repeat 55% 0%/1920px;
 		height: auto;
 	}
-    
 }
 
 @media (max-width: 1366px) {
@@ -85,10 +98,16 @@
 		--section: 40px;
 		--block: 24px;
 	}
+	.main_content-delite {
+		.header__wrapper {
+			align-items: center;
+			grid-template-columns: 1fr;
+		}
+	}
 	.header__wrapper {
 		grid-template-columns: 1fr;
 		justify-items: center;
-		.header__text{
+		.header__text {
 			order: 2;
 		}
 		.header__img {
@@ -98,23 +117,22 @@
 				max-width: 40%;
 			}
 		}
-		.mobile__img{
+		.mobile__img {
 			display: block;
 			max-width: 43%;
-    margin: auto;
+			margin: auto;
 		}
 	}
-	.offer{
+	.offer {
 		display: grid;
 		max-width: 100%;
 	}
-	.list__list{
+	.list__list {
 		font-size: 14px;
 	}
 }
 
 @media (max-width: 800px) {
-	
 }
 
 @media (max-width: 660px) {
@@ -125,5 +143,4 @@
 	}
 }
 @media (max-width: 480px) {
-	
 }
