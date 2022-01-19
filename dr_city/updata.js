@@ -133,7 +133,7 @@ class Ondata {
             sochi: '_Сочи_',
             sochi_pay: '_Сочи-ПП_',
             krim: '_Крым_',
-            krim_pay: '_Крым-ПП_',
+            krim_pay: '_Крым_',
 
 
         };
@@ -166,29 +166,29 @@ class Ondata {
 
         };
         this.NP = {
-            kz: '_НК_',
-            kzr: '_НК_',
-            free: '_НК_',
+            kz: 'НК_',
+            kzr: 'НК_',
+            free: 'НК_',
             pay: '_ПП_',
-            ua: '_НК_',
-            don: '_НК_',
-            by: '_НК_',
-            msk: '_НК_',
-            mskPay: '_ПП_',
-            minsk: '_НК_',
-            rostov: '_НК_',
-            rostov_pay: '_ПП_',
-            kdr: '_НК_',
-            kdr_pay: '_ПП_',
-            chelyabinsk: '_НК_',
-            chelyabinsk_pay: '_ПП_',
-            samara: '_НК_',
-            samara_pay: '_ПП_',
-            bashkiria: '_НК_',
-            sochi: '_НК_',
-            sochi_pay: '_ПП_',
-            krim: '_НК_',
-            krim_pay: '_ПП_',
+            ua: 'НК_',
+            don: 'НК_',
+            by: 'НК_',
+            msk: 'НК_',
+            mskPay: 'ПП_',
+            minsk: 'НК_',
+            rostov: 'НК_',
+            rostov_pay: 'ПП_',
+            kdr: 'НК_',
+            kdr_pay: 'ПП_',
+            chelyabinsk: 'НК_',
+            chelyabinsk_pay: 'ПП_',
+            samara: 'НК_',
+            samara_pay: 'ПП_',
+            bashkiria: 'НК_',
+            sochi: 'НК_',
+            sochi_pay: 'ПП_',
+            krim: 'НК_',
+            krim_pay: 'ПП_',
         };
         // аттребуты
         this.dataId = [
@@ -373,6 +373,136 @@ onData.setInnerText("kz", /позвоните мне/gi, "Кеңес алуға 
 
 
 
+// let names = ["Kevin", "Jack", "Mark"];
+// let listStatements = ["is youngest", "is not youngest", "is not oldest", "is oldest"];
+// let statements = [];
+// let arrRandom = [];
+// let resulty = ['', '', ''];
+// let current = -1;
+// let current2 = -1;
+// function getResult (names) {
+//     if (arrRandom.length <= 3) {
+
+//         for (let index = 0; index < 3; index++) {
+//             current++
+//             statements.push(names[index] + "-" + listStatements[arrRandom[current]])
+
+//             if (arrRandom.length == 2 || current2 == 2) {
+//                 current2++
+//                 if (arrRandom[current] == 0) {
+//                     resulty.splice(0, 1, names[index]);
+
+//                 }
+//                 if (arrRandom[current] == 1 & arrRandom.indexOf(0) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 1 & arrRandom.indexOf(2) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 1 & arrRandom.indexOf(3) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 2 & arrRandom.indexOf(0) == -1) {
+//                     resulty.splice(0, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 2 & arrRandom.indexOf(1) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 2 & arrRandom.indexOf(3) == -1) {
+//                     resulty.splice(2, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 3) {
+//                     resulty.splice(2, 1, names[index]);
+//                 }
+//                 if (current == 2) {
+
+//                     if (arrRandom.indexOf(0) != -1 & arrRandom.indexOf(1) != -1) {
+//                         resulty.splice(2, 1, names[index]);
+//                     }
+//                     if (arrRandom.indexOf(0) != -1 & arrRandom.indexOf(2) != -1) {
+//                         resulty.splice(2, 1, names[index]);
+//                     }
+//                     if (arrRandom.indexOf(0) != -1 & arrRandom.indexOf(3) != -1) {
+//                         resulty.splice(1, 1, names[index]);
+//                     }
+//                     if (arrRandom.indexOf(1) != -1 & arrRandom.indexOf(2) != -1) {
+//                         resulty.splice(2, 1, names[index]);
+//                     }
+//                     if (arrRandom.indexOf(1) != -1 & arrRandom.indexOf(3) != -1) {
+//                         resulty.splice(0, 1, names[index]);
+//                     }
+//                     if (arrRandom.indexOf(2) != -1 & arrRandom.indexOf(3) != -1) {
+//                         resulty.splice(0, 1, names[index]);
+//                     }
+//                 }
+//             };
+
+//             if (arrRandom.length == 3) {
+//                 if (arrRandom[current] == 0) {
+//                     resulty.splice(0, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 1 & arrRandom.indexOf(0) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 1 & arrRandom.indexOf(2) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 1 & arrRandom.indexOf(3) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 2 & arrRandom.indexOf(0) == -1) {
+//                     resulty.splice(0, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 2 & arrRandom.indexOf(1) == -1) {
+//                     resulty.splice(1, 1, names[index]);
+//                 }
+//                 if (arrRandom[current] == 2 & arrRandom.indexOf(3) == -1) {
+//                     resulty.splice(2, 1, names[index]);
+//                 }
+
+//                 if (arrRandom[current] == 3) {
+//                     resulty.splice(2, 1, names[index]);
+//                 }
+//             };
+//         }
+//     };
+//     return resulty
+// };
+
+// function randomFunction () {
+//     let random = Math.floor(Math.random() * (4 - 0) + 0)
+//     if (arrRandom.indexOf(random) == -1) {
+//         arrRandom.push(random)
+//     }
+// };
+// randomFunction();
+// randomFunction();
+// randomFunction();
+
+// getResult(names);
 
 
+let scheme = [
+    '0-0-0-0',
+    '1-1-1-0',
+    '0-0-1-0',
+    '0-0-1-0']
 
+
+function getResult (scheme) {
+    //scheme = scheme.replace("-", "");
+    ;
+    for (let index = 0; index < scheme.length; index++) {
+        const element = scheme[index].replace(/-/g, "");
+        console.log(element)
+
+
+    }
+
+
+    //let arrayShema = Array.from(scheme)
+
+
+}
+
+getResult(scheme)
