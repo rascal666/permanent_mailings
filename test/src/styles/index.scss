@@ -1,0 +1,162 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(16px, rgb(255, 255, 255));
+	background: #fff;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 0 !important;
+	background-color: white;
+}
+
+.wrapper-text p {
+	margin-bottom: 0px;
+}
+
+.wrapper-text {
+	font-size: 16px;
+	color: #5e7491;
+	line-height: normal;
+	overflow: hidden;
+}
+
+.base-width {
+	background-color: transparent;
+	margin: 0;
+	max-width: none;
+	min-width: 0;
+}
+
+.catalogue {
+	padding: 0;
+}
+
+.cms-page .col-middle {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
+}
+
+.marquiz__button {
+	background: $corporate_color;
+	border: 1px solid $corporate_color;
+	text-decoration: none;
+	color: white !important;
+	padding: 10px 30px;
+	border-radius: 30px;
+}
+
+.marquiz__button a {
+	color: white !important;
+}
+
+.catalogue h1 {
+	display: none;
+}
+
+#content {
+	margin-top: 0;
+}
+
+.wrapper-text ul li {
+	list-style-type: none !important;
+}
+
+.wrapper-text table td {
+	padding: 20px;
+}
+
+.simple-breadcrumbs {
+	display: none !important;
+}
+/* --- */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper-text p {
+	margin-bottom: 0;
+}
+
+.marquiz__container a {
+	vertical-align: text-top;
+}
+
+.coll_opros {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Open Sans', sans-serif;
+	color: #5e7491;
+	letter-spacing: 0.2px;
+	align-items: center;
+	max-width: 1400px;
+	width: 90%;
+	margin: auto;
+	padding: 80px 0;
+	font-size: 18px;
+}
+
+.img_opros img {
+	width: 500px;
+}
+
+.head_h1 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+.head_h2 {
+	font-size: 16px;
+	padding-bottom: 30px;
+}
+
+.marquiz__container {
+	width: 100%;
+	text-align: inherit !important;
+}
+
+.line_opros {
+	background: #5e7491;
+	height: 2px;
+	width: 200px;
+	margin: 60px 0 20px 0;
+}
+
+@media (max-width: 1040px) {
+	.coll_opros {
+		flex-direction: column-reverse;
+	}
+	.img_opros img {
+		width: 230px;
+	}
+}
+
+@media (max-width: 920px) {
+	.coll_opros {
+		flex-direction: column-reverse;
+		padding: 20px 0;
+	}
+	.img_opros img {
+		width: 230px;
+	}
+	.head_h1 {
+		font-size: 25px;
+	}
+	.head_h2 {
+		font-size: 18px;
+		padding-bottom: 30px;
+	}
+	.line_opros {
+		margin: 40px 0 20px 0;
+	}
+}

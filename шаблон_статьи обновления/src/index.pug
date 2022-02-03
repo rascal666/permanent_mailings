@@ -1,0 +1,247 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "оставить товары"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.imgDecor.imgDecor__center
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299935/content_elementdddd_1.png", alt="")
+					.content
+						.header__wrapper
+							.header__text
+								.header__heading.section_h2 Тренды онлайн-продаж в 2022 году
+								img.mobile__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299903/content_illyustratsiya.png")
+								.offer.section_h5
+									p Для многих компаний интернет стал основным каналом продаж. Борьба за клиента усиливается с каждым годом. Что с этим делать?
+
+									p Следить за трендами. Клиента получат те, кто понимает тенденции рынка и вовремя меняет курс. В статье делимся идеями, что в 2022 году принесет клиентов и прибыль.
+								p.section_h3 Читайте:
+								.header__notes.notes
+									.notes__offer
+										+buttonLink(
+											'Гибкость ассортимента',
+											'Гибкость ассортимента',
+											'notes__heading',
+											'#sort',
+										)
+										+buttonLink(
+											'Внедрение CRM',
+											'Внедрение CRM',
+											'notes__srm',
+											'#srm',
+										)
+										+buttonLink(
+											'Виртуальные экскурсии и удаленное тестирование продукции ',
+											'Виртуальные экскурсии и удаленное тестирование продукции ',
+											'notes__virtual',
+											'#virtual',
+										)
+										+buttonLink(
+											'Умная реклама ',
+											'Умная реклама ',
+											'notes__reklama',
+											'#advertising',
+										)
+										+buttonLink(
+											'Замена call-центра на чат-бота и голосовых роботов',
+											'Замена call-центра на чат-бота и голосовых роботов',
+											'notes__voice',
+											'#voice',
+										)
+										+buttonLink(
+											'Покупки с помощью голосовых помощников',
+											'Покупки с помощью голосовых помощников',
+											'notes__buy',
+											'#buy',
+										)
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299903/content_illyustratsiya.png")
+			.infoBlock.white#sort
+				.imgDecor.imgDecor__center
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299936/content_elemddddent_2.png", alt="")
+				// картинка тренда с права
+				.infoBlock__imgTrend
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299904/content_trend_1.png", alt="")
+				.content 
+					.infoBlock__wrapper.item
+						.item__left.left
+							.left__header 
+								.left__number 
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299919/content_ikonka_1.png", alt="")
+								.left__line 
+							.left__heading.section_h2 Гибкость ассортимента 
+							.left__offer 
+								p Развитие технологий приводит к изменению спроса. Этот процесс постоянно ускоряется. Всё быстрее выходят новинки, о которых покупатель тут же узнает из интернета. И сразу начинает искать их в магазинах.  
+								p Теперь не получится годами продавать одно и то же, особенно в сфере оборудования, электроники и тому подобное. Предпринимателям нужно подстраивать ассортимент под запросы покупателей, вводить новые товары и убирать непопулярные. И делать это мгновенно.
+						.item__right.item__right_blue.right
+							.right__heading.section_h3 Что сделать прямо сейчас
+							.right__subtitle.section_h5 Быстро обновить ассортимент и запустить продажи за 1-2 дня получится с помощью проекта «Дилер — Дистрибьютор» на Пульсе цен:
+							.list
+								.list__li_circle.section_h5 Добавление до 10 000 товаров и запуск продаж в тот же день.
+								.list__li_circle.section_h5 Автоматическое обновление цен и остатков у вас на сайте.
+								.list__li_circle.section_h5 Мгновенный ввод и вывод товаров из каталога.
+								.list__li_circle.section_h5 Размещение новинок от производителя.
+								.list__li_circle.section_h5 Удовлетворение спроса, заказы и прибыль. 
+					+button('{crm_analytics:click_link(Хочу консультацию по «Дилер — Дистрибьютор»,#order,network_actions,НК_статья_подключить_curData)}', 'Хочу консультацию по «Дилер — Дистрибьютор»', 'section-buttonAccent')
+			.infoBlock.blue#srm
+				// картинка тренда с права
+				.infoBlock__imgTrend
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299905/content_frame_381.png", alt="")
+				.content 
+					.infoBlock__wrapper.item
+						.item__left.left
+							.left__header 
+								.left__number 
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299920/content_ikonka_2.png", alt="")
+								.left__line 
+							.left__heading.section_h2 Внедрение CRM
+							.left__offer 
+								p Онлайн-заказы приходят из нескольких источников: собственный интернет-магазин, торговые площадки, e-mail, телефон, мессенджеры и соцсети. Обрабатывать их нужно моментально, ведь покупатель ждать не будет — ему ничего не стоит за пару кликов оставить заказ вашему конкуренту. Поэтому реагировать на заявку нужно оперативно. А как это сделать, если каналов множество? Установить CRM-систему. 
+								p CRM собирает всю информацию о клиентах и заказах в одном месте, помогает закрывать больше заявок за то же время. Она сама распределяет задачи по сотрудникам, формирует и отправляет счета, отчеты, sms-оповещения и т.д. Все сделки, звонки и чаты с покупателями хранятся в единой системе. Так продавцу легче ориентироваться в истории клиента, чтобы предлагать подходящий товар или услугу. 
+							.left__note 
+								p Узнайте у специалистов Пульса цен, как быстро создать сайт и настроить интеграцию с CRM-системой Битрикс24. Закажите бесплатную консультацию и получайте все заказы в единую систему.
+						.item__right.item__right_white.right
+							.right__heading.section_h3 Что сделать прямо сейчас
+							.right__subtitle.section_h5 Установите Битрикс24 - самую популярную CRM в России (по данным исследования рынка CRM в России).  Подключите сайт на Пульсе цен к Битрикс (заявки с площадки будут приходить туда автоматически):
+							.list
+								.list__li_circle.section_h5 Обрабатывайте все обращения от клиентов в одном месте.
+								.list__li_circle.section_h5 Персонализируйте обслуживание покупателей, используя данные о прошлых покупках.
+								.list__li_circle.section_h5 Распределяйте задачи и контролируйте работу менеджеров по продажам.
+								.list__li_circle.section_h5 Оценивайте, откуда приходит больше клиентов, и направляйте бюджет в более прибыльные каналы.
+					+button('{crm_analytics:click_link(Заказать консультацию по сайту с Битрикс24,#order,network_actions,НК_статья_подключить_curData)}', 'Заказать консультацию по сайту с Битрикс24', 'section-buttonAccent')
+			.infoBlock.white#virtual
+				.imgDecor.imgDecor__bottom
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299915/content_elementy_3.png", alt="")
+				// картинка тренда с права
+				.infoBlock__imgTrend
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299906/content_trend_3.png", alt="")
+				.content 
+					.infoBlock__wrapper.item
+						.item__left.left
+							.left__header 
+								.left__number 
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299921/content_ikonka_3.png", alt="")
+								.left__line 
+							.left__heading.section_h2 Виртуальные экскурсии и удаленное тестирование продукции 
+							.left__offer 
+								p До пандемии потребители могли приехать на завод или в магазин и лично убедиться в соблюдении технологии производства и качестве продукции. Теперь они хотят делать то же самое, но виртуально. 
+								p Бизнес стремится облегчить клиентам выбор товаров, повысив интерес к бренду и продукции. Массово внедряются онлайн-консультации, видеоконференции и прямые трансляции, появляются приложения дополненной реальности (например, виртуальные примерочные) и т.д.
+						.item__right.item__right_blue.right
+							.right__heading.section_h3 Что сделать прямо сейчас
+							.right__subtitle.section_h5 Если разработка и внедрение дополненной реальности в вашем случае нецелесообразны, начните с более простого:
+							.list
+								.list__li_circle.section_h5 Добавьте на сайт наглядную информацию о магазине и продукции. Загрузите видео с экскурсией по складу, офису и производству, познакомьте клиентов с производственным циклом и системой качества.
+								.list__li_circle.section_h5 Дайте покупателям «потрогать» товары онлайн - создавайте 3D-фотографии и макеты.
+								.list__li_circle.section_h5 Внедряйте онлайн-консультации и демонстрацию продукции по видеосвязи из магазина или офиса.
+								.list__li_circle.section_h5 Снимайте сами и мотивируйте клиентов публиковать видеоотзывы о вашем продукте и его использовании.
+								.list__li_circle.section_h5 Сделайте ставку на видеоконтент в соцсетях: распаковки, обзоры, руководства по выбору товаров, «Вопрос – ответ» и т.д. 
+			.infoBlock.blue#advertising
+				.imgDecor.imgDecor__center
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299937/content_elddddement_1.png", alt="")
+				// картинка тренда с права
+				.infoBlock__imgTrend
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299908/content_trend_4.png", alt="")
+				.content 
+					.infoBlock__wrapper.item
+						.item__left.left
+							.left__header 
+								.left__number 
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299914/content_ikonka_4.png", alt="")
+								.left__line 
+							.left__heading.section_h2 Умная реклама
+							.left__offer 
+								p За время карантина люди стали #[a.section_link больше ] времени проводить в онлайн-среде. Здесь они ежедневно сталкиваются с тоннами контента, разбираться с которым нет ни времени, ни желания. Клиенты уже не хотят самостоятельно изучать каталог, сравнивать характеристики и условия. Они ждут готового решения, которое подойдет им лично.
+								p Поэтому Яндекс и Google уходят от общей рекламы к персональной. Браузеры собирают историю запросов: что люди ищут, читают, смотрят и покупают. На основе этих данных человеку показывают товары, которые с большей вероятностью его заинтересуют.
+						.item__right.item__right_white.right
+							.right__heading.section_h3 Что сделать прямо сейчас
+							.list
+								.list__li_circle.section_h5 Обращайтесь к клиентам через смарт-баннеры. Они подстраивают форму, визуал и содержимое под каждого пользователя. Так реклама получается нацеленной на конкретного человека, а не общую группу людей. 
+								.list__li_circle.section_h5 Выбирайте рекламу, которая учитывает интересы и потребности потребителей. Например, продвижение в Рекламной сети Яндекса (РСЯ) и Контекстно-медийной сети Google (КМС).
+								.list__li_circle.section_h5 Увеличьте бюджет на кампании в соцсетях, мессенджерах и мобильных приложениях.
+								.list__li_circle.section_h5 Тестируйте персональные сообщения в разных каналах: email, sms, «пуши», Telegram и в дальнейшем выбирайте удобный канал общения для каждого клиента.
+					+button('{crm_analytics:click_link(Расскажите про умную рекламу,#order,network_actions,НК_статья_подключить_curData)}', 'Расскажите про умную рекламу', 'section-buttonAccent')
+			.infoBlock.white#voice
+				.imgDecor.imgDecor__centerCenter
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299938/content_elemdddent_1.png", alt="")
+				// картинка тренда с права
+				.infoBlock__imgTrend
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299909/content_trend_5.png", alt="")
+				.content 
+					.infoBlock__wrapper.item
+						.item__left.left
+							.left__header 
+								.left__number 
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299913/content_ikonka_5.png", alt="")
+								.left__line 
+							.left__heading.section_h2 Замена call-центра на чат-бота и голосовых роботов
+							.left__offer 
+								p Покупатели не готовы ждать по 10-20 мин, пока освободится оператор call-центра. А более молодое поколение, привыкшее к гаджетам, охотнее прибегает к помощи переписки, избегая разговоров с менеджером. Как удержать молодых и нетерпеливых? Настроить чат-бот.
+								p Чат-боты помогают сохранить заказчиков, улучшить качество обслуживания, получить лояльных покупателей и разгрузить отдел продаж, повысив его эффективность.
+							.list 
+								.list__heading На что способны чат-боты и голосовые роботы:
+								.list__li_circle В течение нескольких секунд отвечают на вопросы пользователей в режиме 24/7
+								.list__li_circle Обрабатывают несколько заявок одновременно, освобождая операторов от ответа на типичные вопросы
+								.list__li_circle Рассказывают о скидках и акциях, персональных предложениях, «брошенной корзине» и т.д.
+								.list__li_circle Помогают найти товар и сделать заказ: отправляют фото, видеоописание, прайс, пересылают заявки менеджеру по продажам и т.д.
+								.list__li_circle Принимают оплату
+								.list__li_circle Сообщают о статусе заказа
+								.list__li_circle Помогают оформить возврат
+								.list__li_circle Собирают отзывы
+						.item__right.item__right_blue.right
+							.right__heading.section_h3 Что сделать прямо сейчас
+							.right__subtitle.section_h5 Подключите чат-бота в соцсетях или настройте голосового робота для ответа на самые частые вопросы покупателей.
+							.list
+								.list__li_circle.section_h5 Автоматизируйте рутинные процессы, перераспределив время сотрудников на более важные задачи. Это позволит повысить конверсию и продажи. 
+								.list__li_circle.section_h5 Алгоритмы и сценарии бота настраиваются индивидуально, исходя из целей компании. Попытайтесь создать не просто автоответчик, а грамотного и приятного собеседника. Это повысит интерес к бренду в глазах клиентов и увеличит количество повторных заказов.
+			.infoBlock.blue#buy
+				// картинка тренда с права
+				.infoBlock__imgTrend
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299910/content_trend_6.png", alt="")
+				.content 
+					.infoBlock__wrapper.item
+						.item__left.left
+							.left__header 
+								.left__number 
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/299912/content_ikonka_6.png", alt="")
+								.left__line 
+							.left__heading.section_h2 Покупки с помощью голосовых помощников
+							.left__offer 
+								p Смарт-колонки и другие устройства с голосовыми помощниками уже назвали «самым быстрорастущим сегментом за всю историю мировой электроники» и «важнейшей тенденцией в области потребительских технологий» (согласно прогнозам аналитической компании Canalys). В 2022 году количество покупок с помощью голосовых ассистентов увеличится на 50%. 
+							.list 
+								.list__heading Аналитики уверены, что скоро этот канал перевернет технологии продаж. Их функционал и сферы применения постоянно расширяются. Уже сейчас Алиса от Яндекса, Маруся от Mail.ru Group, Google Assistant, Apple Siri и другие могут помочь пользователям:
+								.list__li_circle купить товары в интернет-магазине
+								.list__li_circle найти товар по заданным критериям
+								.list__li_circle проверить статус заказа
+								.list__li_circle не забыть об отложенных позициях
+								.list__li_circle разобраться в характеристиках товаров и помочь определиться с выбором
+								.list__li_circle уточнить условия оплаты, доставки и возврата
+							.left__note 
+								p Пульс цен поможет вам создать работающий сайт, оптимизированный под современные тенденции. Закажите бесплатную консультацию, менеджер по сайтам свяжется с вами.
+						.item__right.item__right_white.right
+							.right__heading.section_h3 Что сделать прямо сейчас
+							.right__subtitle.section_h5 Пульс цен поможет вам создать работающий сайт, оптимизированный под современные тенденции. Закажите бесплатную консультацию, менеджер по сайтам свяжется с вами.
+							.right__offer
+								p 1. Адаптируйте онлайн-магазин под мобильные устройства.
+								p 2. Установите SSL-сертификат, так как предпочтение в поиске отдается результатам с защищенным протоколом HTTPS.
+							.list
+								.list__heading.section_h5 3. Главное отличие голосовых запросов в формулировке (разговорный язык, вопросительные слова, фразы «рядом со мной», «недалеко» и т.д.). Учитывайте это при оптимизации сайта под голосовой поиск:
+								.list__li_circle.section_h5 Отметьте компанию в картах Google и Яндекс, заполните профиль в Яндекс.Справочнике и Google Мой бизнес, чтобы привлекать «местных» покупателей.
+								.list__li_circle.section_h5 Пишите контент для сайта понятным языком (простые слова, короткие предложения, небольшие абзацы).
+								.list__li_circle.section_h5 Используйте низкочастотные запросы (5+ слов), так как голосовые формулировки обычно длиннее текстовых. Собрать их поможет Яндекс.Вордстат.
+								.list__li_circle.section_h5 Добавьте раздел с ответами на частые вопросы своей ЦА. Составьте список ключевых запросов с вопросительными словами. Дополнительно используйте информацию от отдела продаж.
+							.right__offer
+								p 4. Попробуйте самостоятельно найти свой магазин и товары с помощью голосового помощника.
+					+button('{crm_analytics:click_link(Хочу консультацию по адаптации сайта,#order,network_actions,НК_статья_подключить_curData)}', 'Хочу консультацию по адаптации сайта', 'section-buttonAccent')
+		include ./modules/footer.pug
+			noscript
+		div
+			img(src='https://mc.yandex.ru/watch/65623129' style='position:absolute; left:-9999px;' alt='')
+	p {crm_analytics:show_page(network_actions,НК_Оставить_товары_curData)}

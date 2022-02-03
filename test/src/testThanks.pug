@@ -1,0 +1,35 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "оставить товары"
+	body.js-body
+		.main_content
+			include ./modules/toolbarCupon.pug
+			.coll_opros
+				.text_opros
+					p.head_h1(style='margin-top: 70px; line-height: 1.4em; font-weight: 600; letter-spacing: 1.5px')
+						| Благодарим 
+						br
+						| 					за интерес к тестированию!
+					p.head_h2(style='max-width: 800px; margin-top: 30px')
+						| Ваш подарочный 
+						span(style='border-bottom: 2px solid #00a6ff')
+							| купон №108 на 
+							span(style='font-weight: bold') 3 000 рублей
+							|  .
+						|  Используйте его в качестве скидки на любой тариф линейки «Старт». Просто запомните или запишите номер купона и назовите его менеджеру Пульса цен.
+					p.head_h2(style='max-width: 800px')
+						| Надеемся, что проходить тест было интересно. До встречи на следующих интерактивах!
+					p.head_h2(style='max-width: 800px; font-size: 14px; color: #9a9a9a')
+						| Бонус предоставляется при первичном подключении тарифов линейки «Старт». 
+						br
+						| 					Не суммируется с другими скидками и акциями. Не действителен на тарифах «Бизнес» и «Всё включено».
+				.img_opros
+					img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/301983/content_frame_4_1.png' alt='')
+			include ./modules/footerCupon.pug
+	p {crm_analytics:show_page(network_actions,НК_РФ_Купон_за_Тест_curData)}

@@ -113,8 +113,8 @@ header .text {
 							</div>
 
 							<div class="pointer_futer section-buttonFooter ab-order feedback-js js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059" data-company-id="99572059" data-company-name="Пульс Цен - Техническая поддержка" data-company-name-rest="" data-company-url="https://support.pulscen.ru/" data-params='{"company_id":"99572059"}' data-statistics="1" data-type="callback">
-								<!-- Позвоните мне -->
-								{crm_analytics:click_link(Позвоните мне,#order,network_actions,_НК_РФ_Консультация)}
+								Позвоните мне
+								<!-- {crm_analytics:click_link(Позвоните мне,#order,network_actions,_НК_РФ_Консультация)} -->
 							</div>
 						</div>
 						<div class="agreement">
@@ -130,9 +130,20 @@ header .text {
 				</section>
 			</div>
 
-			{crm_analytics:show_page(network_actions,_НК_РФ_)}
+			{crm_analytics:show_page(network_actions,_НК_РФ_200122)}
 			<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/266836/consultant.js"></script>
 			<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/299452/updata.js"></script>
 			<!-- <script src="updata.js"></script>  -->
+			<script>
+			const dom = document.querySelector('.js-body')
+
+let currentData = new Date();
+const month = currentData.getMonth() + 1
+let data = currentData.getDate() + '0' + month + '22'
+
+
+dom.innerHTML = dom.innerHTML.replace(/curData/gi, data)
+		</script>
 		</body>
+		
 	</html>

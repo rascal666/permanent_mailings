@@ -1,0 +1,297 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(16px, rgb(255, 255, 255));
+	font-weight: 500;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+.imgDecor {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	left: 0;
+}
+.imgDecor__bottom {
+	bottom: 0;
+}
+.imgDecor__center {
+	bottom: -356px;
+}
+.imgDecor__centerCenter {
+	left: 50% !important;
+	transform: translateX(-50%);
+	bottom: -356px;
+}
+header {
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/299902/content_fonovye_effekty.png') no-repeat 100% 100% / cover, linear-gradient(235.3deg, #ff00a8 -77.79%, #0258d8 104.58%) no-repeat 100% 100% / cover;
+	position: relative;
+	.header__decor {
+		position: absolute;
+		bottom: -90px;
+		z-index: 2;
+	}
+}
+
+.header__wrapper {
+	@include grid(2vw, 1.2fr 1fr);
+	margin-top: 30px;
+	align-items: center;
+	padding-bottom: var(--section);
+
+	.header__text {
+		.header__notes {
+			margin-top: 20px;
+			.notes__offer {
+				position: relative;
+			}
+			.notes__offer p {
+				min-height: 30px;
+				display: grid;
+				align-content: center;
+			}
+			.notes__offer a {
+				min-height: 30px;
+				display: grid;
+				align-content: center;
+			}
+			.notes__offer p:hover {
+				cursor: pointer;
+				padding-left: 40px;
+				margin-left: -40px;
+				text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+				font-weight: 700;
+			}
+			.notes__offer a:hover {
+				cursor: pointer;
+				padding-left: 40px;
+				margin-left: -40px;
+				text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+				font-weight: 700;
+			}
+
+			.notes__heading:hover {
+				background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/299928/content_ikonka_pri_vsplyvanii.png') no-repeat 0% 0% / 30px;
+			}
+			.notes__srm:hover {
+				background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/300107/content_group_1193.png') no-repeat 0% 0% / 30px;
+			}
+			.notes__virtual:hover {
+				background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/300104/content_group_1192.png') no-repeat 0% 0% / 30px;
+			}
+			.notes__reklama:hover {
+				background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/300109/content_group_1196.png') no-repeat 0% 0% / 30px;
+			}
+			.notes__voice:hover {
+				background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/300108/content_group_1194.png') no-repeat 0% 0% / 30px;
+			}
+			.notes__buy:hover {
+				background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/300106/content_group_1191.png') no-repeat 0% 0% / 30px;
+			}
+			.notes__img {
+				margin-top: -20px;
+			}
+		}
+	}
+	.header__img {
+		position: relative;
+		img {
+			max-width: 600px;
+			width: 100%;
+		}
+	}
+	.mobile__img {
+		display: none;
+	}
+}
+.offer {
+	margin-top: 30px;
+	margin-bottom: var(--block);
+	max-width: 720px;
+	grid-gap: 16px;
+	display: grid;
+}
+.white {
+	background: #ffffff;
+}
+
+.blue {
+	background: #ebf3fc;
+}
+.infoBlock {
+	color: $main_text_color;
+	padding: 11vw 0;
+	position: relative;
+	.infoBlock__imgTrend {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-left: 70%;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.infoBlock__wrapper {
+		@include grid(2vw, 1fr 1fr);
+		margin-bottom: var(--block);
+		align-items: flex-start;
+	}
+	.item__left {
+		position: relative;
+		top: -18px;
+		max-width: 670px;
+		.list {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.left__header {
+			color: $corporate_color;
+			font-weight: 700;
+			@include grid(var(--block), 80px 1fr);
+			align-items: end;
+			margin-top: -58px;
+			.left__number {
+				font-size: 18px;
+			}
+			.left__line {
+				margin: 0px 0 0px;
+				background: $corporate_color;
+				opacity: 0.3;
+				max-width: 100%;
+				width: 100%;
+				height: 2px;
+			}
+		}
+		.left__heading {
+			margin-top: var(--block60);
+		}
+		.left__offer {
+			margin-top: var(--block);
+			display: grid;
+			grid-gap: 1.5vw;
+			line-height: 24px;
+		}
+		.left__note {
+			margin-top: var(--block);
+			opacity: 0.6;
+		}
+	}
+	.item__right_white {
+		background: rgb(255, 255, 255);
+	}
+	.item__right_blue {
+		background: #ebf3fc;
+	}
+	.item__right {
+		border-radius: 0px 70px 0px 70px;
+		padding: var(--block);
+		.right__heading,
+		.right__subtitle {
+			color: $corporate_color;
+		}
+		.right__subtitle {
+			margin-top: 20px;
+		}
+		.right__offer {
+			display: grid;
+			grid-gap: 16px;
+			margin-top: 16px;
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.infoBlock {
+		padding: 180px 0;
+		.item__left {
+			.left__offer {
+				grid-gap: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1900px) {
+	.imgDecor {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		left: -190px;
+	}
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1240px) {
+	.imgDecor {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--section: 40px;
+		--block: 24px;
+		--block60: 32px;
+	}
+
+	.header__wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		.header__text {
+			order: 2;
+		}
+		.header__img {
+			display: none;
+			justify-items: center;
+			img {
+				max-width: 40%;
+			}
+		}
+		.mobile__img {
+			display: block;
+			max-width: 43%;
+			margin: auto;
+		}
+	}
+	.offer {
+		display: grid;
+		max-width: 100%;
+		margin-top: 0;
+	}
+	.infoBlock {
+		padding: 60px 0;
+		.infoBlock__wrapper {
+			grid-template-columns: 1fr;
+		}
+		.infoBlock__imgTrend {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.header__wrapper {
+		.header__text {
+			.header__notes {
+				.notes__offer a:hover {
+					cursor: pointer;
+					background: none;
+				}
+			}
+		}
+	}
+	.infoBlock .item__left .left__header {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 660px) {
+}
+@media (max-width: 480px) {
+}

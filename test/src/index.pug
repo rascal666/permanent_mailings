@@ -1,0 +1,40 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "оставить товары"
+		script(src='//script.marquiz.ru/v1.js' type='application/javascript')
+		script.
+			document.addEventListener("DOMContentLoaded", function () {
+			Marquiz.init({
+			host: "//quiz.marquiz.ru",
+			id: "61f7946f36ae2b004084ec2c",
+			autoOpen: false,
+			autoOpenFreq: "once",
+			openOnExit: false,
+			});
+			});
+	body.js-body
+		.main_content
+			include ./modules/toolbar.pug
+			.coll_opros
+				.text_opros
+					p.head_h1(style='margin-top: 40px')
+						| Бизнес-тест 
+						br
+						|  «Олимп для предпринимателей»
+					p.head_h2(style='max-width: 800px')
+						| Нажмите кнопку «начать тест», ответьте на все вопросы и получите свой бонус 3000 рублей. 
+					.marquiz__container
+						a.marquiz__button.marquiz__button_rounded(href='#popup:marquiz_61f7946f36ae2b004084ec2c' data-fixed-side='' data-alpha-color='rgba(254, 178, 39, 0.5)' data-color='#feb227' data-text-color='#ffffff') Начать тест
+					p(style='max-width: 800px; margin-top: 60px')
+						| После прохождения теста поделитесь им с друзьями-предпринимателями. Узнайте, сколько баллов наберут они, и кто из вас круче!
+					script(src='https://yastatic.net/share2/share.js')
+					.ya-share2(style='margin-top: 30px' data-curtain='' data-size='l' data-shape='round' data-services='vkontakte,viber,whatsapp')
+				.img_opros
+					img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/301982/content_group_1204.png' alt='')
+		include ./modules/footer.pug
