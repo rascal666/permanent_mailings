@@ -82,6 +82,11 @@ module.exports = {
             inject: 'body'
         }),
         new HtmlWebpackPlugin({
+            filename: "three_traffic_channels_double.html",
+            template: './src/three_traffic_channels_double.pug',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
             filename: "reliable_B2B_marketplace_double.html",
             template: './src/reliable_B2B_marketplace_double.pug',
             inject: 'body'
