@@ -1,0 +1,186 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "оставить товары"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+			section.sectionTab.blog(data-tab = 'blog') 
+				.content 
+					.blog__wrapper 
+						.blog_themes.theme
+							p.theme__heading.section_h3 Темы
+							.theme__desktop 
+								.theme__item(id='sale' href='#sale') Про увеличение продаж
+								.theme__item(id='online') Про онлайн-сервисы
+								.theme__item(id='site') Про сайт
+								.theme__item(id='workClient') Про работу с клиентами
+								.theme__item(id='tradingFloor') Про торговые площадки
+								.theme__item(id='yandex') Про продвижение в Яндексе
+							.theme__mobile
+								select
+									option(value='sale' ) Про увеличение продаж
+									option(value='online') Про онлайн-сервисы
+									option(value='site') Про сайт
+									option(value='workClient') Про работу с клиентами
+
+						.blog_article.article
+							p.article__heading.section_h2 Блог пульса цен
+							p.article__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
+							.article__new.new
+								.new__heading.section_h3 Новое
+								.new__block 
+									a.block__item(href='#' target="_blank")
+										.item__img 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+										.item__heading Главные обновления портала
+										.item__subtitle 10 обновлений Пульса цен на начало 2022 года
+									a.block__item(href='#' target="_blank")
+										.item__img 
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+										.item__heading Как моментально расширить ассортимент и сразу запустить продажи	
+										.item__subtitle Новая услуга «Дилер — Дистрибьютор»
+									a.block__item(href='#' target="_blank")
+										.item__img
+											img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+										.item__heading Как теперь оформлять товары для увеличения трафика
+										.item__subtitle Товары, которые видят и покупают
+							.article__theme#theme
+								.themeBlock(data-theme="sale")
+									.theme__heading.section_h3 Про увеличение продаж
+									.theme__block
+										a.block__item(href='#' target="_blank")
+											.item__img 
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Главные обновления портала
+											.item__subtitle 10 обновлений Пульса цен на начало 2022 года
+										a.block__item(href='#' target="_blank")
+											.item__img 
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Как моментально расширить ассортимент и сразу запустить продажи	
+											.item__subtitle Новая услуга «Дилер — Дистрибьютор»
+										a.block__item(href='#' target="_blank")
+											.item__img
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Как теперь оформлять товары для увеличения трафика
+											.item__subtitle Товары, которые видят и покупают
+										a.block__item(href='#' target="_blank")
+											.item__img 
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Главные обновления портала
+											.item__subtitle 10 обновлений Пульса цен на начало 2022 года
+										a.block__item(href='#' target="_blank")
+											.item__img 
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Как моментально расширить ассортимент и сразу запустить продажи	
+											.item__subtitle Новая услуга «Дилер — Дистрибьютор»
+										a.block__item(href='#' target="_blank")
+											.item__img
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Как теперь оформлять товары для увеличения трафика
+											.item__subtitle Товары, которые видят и покупают
+										a.block__item(href='#' target="_blank")
+											.item__img 
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Главные обновления портала
+											.item__subtitle 10 обновлений Пульса цен на начало 2022 года
+										a.block__item(href='#' target="_blank")
+											.item__img 
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Как моментально расширить ассортимент и сразу запустить продажи	
+											.item__subtitle Новая услуга «Дилер — Дистрибьютор»
+										a.block__item(href='#' target="_blank")
+											.item__img
+												img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312337/content_anons_katalog_300.png", alt="")
+											.item__heading Как теперь оформлять товары для увеличения трафика
+											.item__subtitle Товары, которые видят и покупают
+									
+								.themeBlock(data-theme="online")
+									.theme__heading.section_h3 Про онлайн-сервисы
+								.themeBlock(data-theme="site")
+									.theme__heading.section_h3 Про сайт
+								.themeBlock(data-theme="workClient")
+									.theme__heading.section_h3 Про работу с клиентами
+								.themeBlock(data-theme="tradingFloor")
+									.theme__heading.section_h3 Про торговые площадки
+								.themeBlock(data-theme="yandex")
+									.theme__heading.section_h3 Про продвижение в Яндексе
+			section.sectionTab.case(data-tab='cases')
+				.content 
+					.section_h2 Кейсы
+					.case__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
+					.case__wrapper
+						.wrapper__block
+							.block__heading СТРОЙКАПИТАЛ #[span.accent «Бизнес. Платина»]
+							.block__subtitle Продажа	 стройматериалов, грузоперевозки, г. Екатеринбург
+							.block__result 
+								p.fat За 2021 год:
+								p #[span.accentOrange 51 067] просмотров товаров
+								p #[span.accentOrange 35 660] посетителей сайта
+								p #[span.accentOrange 446] заказов на общую сумму #[span.accentOrange 22,4] млн руб.
+							+buttonEvent('Смотреть кейс полностью', 'Смотреть кейс полностью', 'section-button', 'button1', 'popup1')
+						.wrapper__block
+							.block__heading СТРОЙКАПИТАЛ #[span.accent «Бизнес. Платина»]
+							.block__subtitle Продажа	 стройматериалов, грузоперевозки, г. Екатеринбург
+							.block__result 
+								p.fat За 2021 год:
+								p #[span.accentOrange 51 067] просмотров товаров
+								p #[span.accentOrange 35 660] посетителей сайта
+								p #[span.accentOrange 446] заказов на общую сумму #[span.accentOrange 22,4] млн руб.
+							+buttonEvent('Смотреть кейс полностью', 'Смотреть кейс полностью', 'section-button button', 'popap1', 'popup1')
+					.case__wrapper
+						.wrapper__block
+							.block__heading СТРОЙКАПИТАЛ #[span.accent «Бизнес. Платина»]
+							.block__subtitle Продажа	 стройматериалов, грузоперевозки, г. Екатеринбург
+							.block__result 
+								p.fat За 2021 год:
+								p #[span.accentOrange 51 067] просмотров товаров
+								p #[span.accentOrange 35 660] посетителей сайта
+								p #[span.accentOrange 446] заказов на общую сумму #[span.accentOrange 22,4] млн руб.
+							+buttonEvent('Смотреть кейс полностью', 'Смотреть кейс полностью', 'section-button button', 'popap1', 'popup1')
+						.wrapper__block
+							.block__heading СТРОЙКАПИТАЛ #[span.accent «Бизнес. Платина»]
+							.block__subtitle Продажа	 стройматериалов, грузоперевозки, г. Екатеринбург
+							.block__result 
+								p.fat За 2021 год:
+								p #[span.accentOrange 51 067] просмотров товаров
+								p #[span.accentOrange 35 660] посетителей сайта
+								p #[span.accentOrange 446] заказов на общую сумму #[span.accentOrange 22,4] млн руб.
+							+buttonEvent('Смотреть кейс полностью', 'Смотреть кейс полностью', 'section-button button', 'popap1', 'popup1')
+			section.sectionTab.reviews(data-tab='reviews')
+				.content
+					.section_h2.fat отзывы				
+					.reviews__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
+					.reviews__block
+						.block__item 
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312456/content_maxresdefault_1_1.png", alt="")
+							.item__heading.accent НАЗВАНИЕ КОМПАНИИ
+							.item__subtitle 10 лет компания размещает свои товары в каталоге Пульса цен С 2019 года подключен платный тариф «Старт.Серебро».
+							.item__resalt.fat Результаты
+							.item__offer 
+								p За 2021 год компания получила 534 заказа с Пульса цен на общую сумму 2,6 млн. рублей. Из них:
+								div 
+									p #[span.accent 462 ] заказа с сайта Дионикс на Пульсе цен
+									p #[span.accent 40 ] сообщений в мессенджер
+									p #[span.accent 32 ] заявки по телефону
+						.block__item 
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312456/content_maxresdefault_1_1.png", alt="")
+							.item__heading.accent НАЗВАНИЕ КОМПАНИИ
+							.item__subtitle 10 лет компания размещает свои товары в каталоге Пульса цен С 2019 года подключен платный тариф «Старт.Серебро».
+							.item__resalt.fat Результаты
+							.item__offer 
+								p За 2021 год компания получила 534 заказа с Пульса цен на общую сумму 2,6 млн. рублей. Из них:
+								div 
+									p #[span.accent 462 ] заказа с сайта Дионикс на Пульсе цен
+									p #[span.accent 40 ] сообщений в мессенджер
+									p #[span.accent 32 ] заявки по телефону
+						
+		//- include ./modules/footer.pug
+		include ./modules/modalStroyCapital.pug
+	//- p {crm_analytics:show_page(network_actions,НК_Оставить_товары_curData)}

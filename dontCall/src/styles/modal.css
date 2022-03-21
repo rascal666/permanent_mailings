@@ -1,0 +1,94 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.modal-block {
+	top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 30px 40px;
+    padding-top: 16px;
+    max-width: 1920px;
+    border: none;
+    background: #F6F6F6;
+	    position: relative;
+}
+
+.modal-block-height {
+	top: 0%;
+	transform: translate(0%, 0%);
+	height: auto;
+	overflow: inherit;
+}
+
+.modal-close {
+	    position: fixed;
+    right: 3%;
+    top: 4%;
+    width: 15px;
+    height: 15px;
+    z-index: 5;
+	display: none;
+}
+.modal-close:hover {
+	filter: contrast(0.1);
+}
+
+.modal-close:hover {
+	cursor: pointer;
+}
+
+.modal-wrapper-block {
+	    background: antiquewhite;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #262523c9;
+    display: none;
+    backdrop-filter: blur(1px);
+    z-index: 4;
+	
+	
+}
+
+.modal-block-show {
+	display: block;
+	animation: anim 0.5s ease;
+}
+
+
+
+
+@keyframes anim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+@media (max-width:900px){
+	.result {
+    grid-template-columns: 1fr;
+}
+.modal-block {
+   padding: 30px 10px;
+}
+}
+

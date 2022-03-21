@@ -1,0 +1,143 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(16px, $main_text_color);
+	overflow: hidden;
+}
+
+.section_blockColl {
+	@include grid(16px, auto 1fr);
+	margin-top: var(--block);
+}
+
+* {
+	scroll-behavior: smooth;
+	line-height: 1.5em;
+}
+.mainThank {
+	@include mainContent(16px, rgb(43, 42, 42));
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/311802/content_frame_1402.png') no-repeat 0% 0%, url('https://www.pulscen.ru/system/ckeditor_assets/pictures/311807/content_fon.png') no-repeat 0% 0% / cover;
+
+	color: $main_text_color !important;
+	.header__wrapper {
+		@include grid(2vw, 1.5fr 1fr);
+		margin-top: 5vw;
+		align-items: center;
+		padding-bottom: 200px;
+		.header__text {
+			margin-top: 3vw;
+			background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/311803/content_frame_1397.png') no-repeat 0% 0% / contain;
+		}
+		.header__img {
+			position: relative;
+			right: -4vw;
+			img {
+				max-width: 100%;
+			}
+		}
+		.mobile__img {
+			display: none;
+		}
+		.offer {
+			display: grid;
+			grid-gap: 16px;
+			margin-top: 24px;
+		}
+		.header__info {
+			padding-top: 24px;
+			border-top: 1px solid #7878783b;
+			color: #787878;
+			max-width: 650px;
+			margin-top: var(--block);
+		}
+	}
+	.section-buttonWhite {
+		margin-top: var(--block);
+	}
+}
+.accent {
+	color: $corporate_color;
+}
+.accent2 {
+	color: #ffd175;
+}
+.accentGreen {
+	color: #77a947;
+}
+.accentRed {
+	color: #db4955;
+}
+.accentFio {
+	color: #6d64ff;
+}
+.accentOrange {
+	color: #ff814f;
+}
+
+.fat {
+	font-weight: 700;
+}
+
+@media (max-width: 1800px) {
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1240px) {
+}
+
+@media (max-width: 1024px) {
+	.main_content {
+		font-size: 14px;
+	}
+	.mainThank {
+		.header__wrapper {
+			grid-template-columns: 1fr;
+			padding-bottom: 50px;
+			.mobile__img {
+				display: grid;
+				justify-items: center;
+				img {
+					max-width: 40%;
+				}
+			}
+			.header__img {
+				display: none;
+				justify-items: center;
+				img {
+					max-width: 40%;
+				}
+			}
+		}
+	}
+	:root {
+		--section: 40px;
+		--section_h2: 26px;
+		--section_h0: 60px;
+		--block: 24px;
+	}
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 800px) {
+	:root {
+		--section_h0: 60px;
+	}
+}
+
+@media (max-width: 660px) {
+}
+.mobi {
+	display: none;
+}
+@media (max-width: 480px) {
+}
+
+@media (max-width: 380px) {
+}

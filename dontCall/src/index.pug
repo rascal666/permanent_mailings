@@ -1,0 +1,32 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "оставить товары"
+	body.js-body
+		.main_content.mainThank
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								.header__heading.section_h1 Благодарим за ваш отклик!
+								.mobile__img
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/311800/content_group_1396.png")
+								.offer
+									p Пожалуйста, укажите актуальный номер телефона и нажмите «отправить». 
+									+button('{crm_analytics:click_link(Оставить номер,#order,network_actions,)}', 'Оставить номер', 'section-buttonAccentOrange ')
+									p Пульс цен сегодня — это сервис для ведения бизнеса в интернете. Здесь есть программы продвижения под любые бизнес-задачи и рекламный бюджет, инструменты для привлечения покупателей и база готовых заявок, оптовых и розничных.
+									p Ознакомиться со всеми услугами и вашими возможностями на Пульсе цен можно в нашем онлайн-магазине.
+									//- +button('{crm_analytics:click_link(Перейти в онлайн-магазин,#order,network_actions,НК_РФ_Консультация_010322)}', 'Перейти в онлайн-магазин', 'section-buttonAccentOrange ')
+									+buttonLink('Перейти в онлайн-магазин', 'Перейти в онлайн-магазин', 'section-buttonAccentOrange', 'https://www.pulscen.ru/online-shop')
+									//- .header__info Пульс цен — это сервис управления B2B-продажами и покупками с возможностью создавать полноценное онлайн представительство вашей компании в 200+ городах России.
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/311800/content_group_1396.png")
+			include ./modules/footer.pug					
+	p {crm_analytics:show_page(network_actions,НК_Актуализация_номера_телефона)}
