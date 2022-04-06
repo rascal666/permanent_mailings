@@ -13,6 +13,17 @@
 .accent {
 	color: #06defe;
 }
+.linkStyle {
+	color: $corporate_color !important;
+	font-weight: 600;
+	transition-duration: 0.5s;
+}
+.linkStyle:hover {
+	color: #0b65ef !important;
+	font-weight: 600;
+	cursor: pointer;
+}
+
 .header {
 	padding-bottom: var(--section_h1);
 }
@@ -21,6 +32,9 @@
 	margin-top: 30px;
 	.header__text {
 		margin-top: 3vw;
+		.list {
+			grid-gap: 4px;
+		}
 	}
 	.list__li:hover {
 		cursor: pointer;
@@ -47,8 +61,19 @@
 	display: grid;
 }
 
+.sectionEndText {
+	margin-top: calc(var(--section) - 20px);
+}
+
+.padTopSection {
+	padding-top: var(--section_h1);
+}
+.padBottomSection {
+	padding-bottom: var(--section_h1);
+}
+
 .sectionWrapper {
-	padding: var(--section_h1) 0;
+	// padding: var(--section_h1) 0;
 	color: $main_text_color;
 	.sectionWrapperBlock {
 		display: grid;
