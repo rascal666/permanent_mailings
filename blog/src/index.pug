@@ -111,6 +111,8 @@ html(lang="ru")
 									.theme__heading.section_h3 Про торговые площадки
 								.themeBlock(data-theme="yandex")
 									.theme__heading.section_h3 Про продвижение в Яндексе
+
+			//- кейсы
 			section.sectionTab.case(data-tab='cases')
 				.content 
 					.section_h2 Кейсы
@@ -153,13 +155,14 @@ html(lang="ru")
 								p #[span.accentOrange 35 660] посетителей сайта
 								p #[span.accentOrange 446] заказов на общую сумму #[span.accentOrange 22,4] млн руб.
 							+buttonEvent('Смотреть кейс полностью', 'Смотреть кейс полностью', 'section-button button', 'popap1', 'popup1')
+			//- отзывы
 			section.sectionTab.reviews(data-tab='reviews')
 				.content
 					.section_h2.fat отзывы				
 					.reviews__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
 					.reviews__block
 						.block__item 
-							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312456/content_maxresdefault_1_1.png", alt="")
+							<iframe class="item__reviews" width="1600" src="https://www.youtube.com/embed/NROul-Tak9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							.item__heading.accent НАЗВАНИЕ КОМПАНИИ
 							.item__subtitle 10 лет компания размещает свои товары в каталоге Пульса цен С 2019 года подключен платный тариф «Старт.Серебро».
 							.item__resalt.fat Результаты

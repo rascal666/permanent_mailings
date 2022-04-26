@@ -1,13 +1,13 @@
 /** @format */
 .toolbar-rascal {
-    padding: 60px 0 ;
-    z-index: 3;
+	padding: 60px 0;
+	z-index: 3;
 	position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+	top: 0;
+	right: 0;
+	left: 0;
 	fill: $forToolbar;
-	background: #FFFFFF;
+	background: #ffffff;
 	box-shadow: 0px 0px 100px rgba(46, 59, 79, 0.1);
 	transition-duration: 0.5s;
 	.wrapper {
@@ -53,28 +53,27 @@
 			max-width: max-content;
 			width: 100%;
 			align-items: center;
-			a{
+			a {
 				width: 40px;
-				
+				fill: $forToolbar !important;
 			}
 		}
-		.toolbar__tab{
-			color:$main_text_color;
+		.toolbar__tab {
+			color: $main_text_color;
 			@include grid(calc(var(--block) - 20px), 1fr 1fr 1fr);
 			font-weight: 700;
-			.tab__item{
+			.tab__item {
 				padding: 5px 20px;
 				font-size: 22px;
 				justify-self: self-end;
 			}
-			.tab__item:hover{
+			.tab__item:hover {
 				color: $corporate_color;
 				padding: 5px 20px;
 				background: #028dd82d;
 				border-radius: 20px;
 				cursor: pointer;
 			}
-
 		}
 	}
 	.numder_toolbar {
