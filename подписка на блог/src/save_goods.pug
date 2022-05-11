@@ -1,0 +1,37 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "оставить товары"
+	body.js-body
+		.main_content.main_content-pp
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								.header__heading.section_h1 Спасибо за вашу заявку!
+								.offer
+									p В ближайшее время специалист Пульса цен свяжется с вами  и расскажет о подключении на специальных условиях.
+									img.mobile__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/298124/content_illyustratsiya.png")
+								.list 
+									.list__heading.section_h3 Выберите платное размещение, чтобы продажи пошли активнее.
+									.list__subtitle Что дает платное размещение:
+									.list__list 
+										.list__li загрузка до 5000 товаров в каталог
+										.list__li приоритетные места для ваших товаров в рубриках Пульса цен
+										.list__li доступ к уникальной базе готовых заказов, оптовых и розничных
+										.list__li возможность получать заявки из одного города или всей Украины
+										.list__li готовый продающий сайт, который работает сразу и обслуживается нашими специалистами
+										.list__li доступ к сервисам продвижения (ремаркетинг, реклама в Google и др.)
+										.list__li личный менеджер поддержки
+									+buttonEvent("{crm_analytics:click_link(Посмотреть тарифы на размещение,#order,network_actions,НК_Оставить_товары_Тарифы_curData)}", "Посмотреть тарифы на размещение", "section-buttonAccent", "https://ekb.pulscen.ru/about/packets")
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/298124/content_illyustratsiya.png")
+		//- include ./modules/footer.pug
+	p {crm_analytics:show_page(network_actions,НК_Оставить_товары_curData)}

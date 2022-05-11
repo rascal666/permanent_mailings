@@ -1,0 +1,118 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(16px, $main_text_color);
+	background: #fff;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+.header__wrapper {
+	@include grid(2vw, 1.8fr 1fr);
+	margin: var(--section) 0;
+	align-items: center;
+	.header__text {
+		margin-top: 3vw;
+	}
+	.header__img {
+		position: relative;
+		right: -4vw;
+		img {
+			max-width: 100%;
+		}
+	}
+	.mobile__img {
+		display: none;
+	}
+	.list {
+		color: $main_text_color;
+		font-size: 16px;
+		margin-top: 7vw;
+		.list__list {
+			@include grid(15px, repeat(auto-fit, minmax(285px, 1fr)));
+		}
+	}
+	.section-buttonAccent {
+		margin-top: 1vw;
+	}
+}
+.offer {
+	margin-top: 30px;
+	max-width: 520px;
+	grid-gap: 16px;
+	display: grid;
+}
+
+.line {
+	margin: 0px 0 0px;
+	background: #e7eef4;
+	max-width: 100%;
+	width: 100%;
+	height: 2px;
+}
+.line-note {
+	font-weight: 700;
+	display: grid;
+	display: flex;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+}
+
+@media (min-width: 1920px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--section: 40px;
+		--block: 24px;
+	}
+	.main_content-delite {
+		.header__wrapper {
+			align-items: center;
+			grid-template-columns: 1fr;
+		}
+	}
+	.header__wrapper {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		.header__text {
+			order: 2;
+		}
+		.header__img {
+			display: none;
+			justify-items: center;
+			img {
+				max-width: 40%;
+			}
+		}
+		.mobile__img {
+			display: block;
+			max-width: 43%;
+			margin: auto;
+		}
+	}
+	.offer {
+		display: grid;
+		max-width: 100%;
+	}
+	.list__list {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 660px) {
+}
+@media (max-width: 480px) {
+}

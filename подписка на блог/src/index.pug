@@ -1,0 +1,26 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Подтверждение e-mail"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								.header__heading.section_h1 Спасибо за вашу заявку!
+								.offer
+									p Благодарим за ваш отклик! Теперь все полезные материалы смогут приходить к вам на почту. Также вы можете посмотреть наш #[b Блог ] и почерпнуть там что-то новое. 
+									img.mobile__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/326095/content_illyustratsiya.png")
+									+buttonLink('Перейти в Блог Пульса цен', 'Перейти в Блог Пульса цен', 'section-buttonAccent', 'https://www.pulscen.ru/about/blog')
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/326095/content_illyustratsiya.png")
+		include ./modules/footer.pug
+	p {crm_analytics:show_page(network_actions,НК_Подтверждение_E-mail)}
