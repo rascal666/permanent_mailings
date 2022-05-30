@@ -16,7 +16,7 @@ html(lang="ru")
 					.blog__wrapper 
 						.blog_themes.theme
 							p.theme__heading.section_h3 Темы
-							.theme__desktop 
+							.theme__desktop(data-content="blog")
 								.theme__item(id='sale' href='#sale') Про увеличение продаж
 								.theme__item(id='online') Про онлайн-сервисы
 								.theme__item(id='site') Про сайт
@@ -24,11 +24,15 @@ html(lang="ru")
 								.theme__item(id='tradingFloor') Про торговые площадки
 								.theme__item(id='yandex') Про продвижение в Яндексе
 							.theme__mobile
-								select
-									option(value='sale' ) Про увеличение продаж
-									option(value='online') Про онлайн-сервисы
-									option(value='site') Про сайт
-									option(value='workClient') Про работу с клиентами
+								.select__dropdown
+									.dropdown__title Про увеличение продаж
+									.dropdown__option(data-content="blog")
+										.option__item(value='sale' ) Про увеличение продаж
+										.option__item(value='online') Про онлайн-сервисы
+										.option__item(value='site') Про сайт
+										.option__item(value='workClient') Про работу с клиентами
+										.option__item(value='tradingFloor') Про торговые площадки
+										.option__item(value='yandex') Про продвижение в Яндексе
 
 						.blog_article.article
 							p.article__heading.section_h2 Блог пульса цен
@@ -118,7 +122,7 @@ html(lang="ru")
 					.section_h2 Кейсы
 					.case__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
 					.case__wrapper
-						.wrapper__block
+						.wrapper__block.wrapper__blockMedika
 							.block__heading СТРОЙКАПИТАЛ #[span.accent «Бизнес. Платина»]
 							.block__subtitle Продажа	 стройматериалов, грузоперевозки, г. Екатеринбург
 							.block__result 
@@ -162,28 +166,169 @@ html(lang="ru")
 					.reviews__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
 					.reviews__block
 						.block__item 
-							<iframe class="item__reviews" width="1600" src="https://www.youtube.com/embed/NROul-Tak9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							.item__heading.accent НАЗВАНИЕ КОМПАНИИ
-							.item__subtitle 10 лет компания размещает свои товары в каталоге Пульса цен С 2019 года подключен платный тариф «Старт.Серебро».
-							.item__resalt.fat Результаты
-							.item__offer 
-								p За 2021 год компания получила 534 заказа с Пульса цен на общую сумму 2,6 млн. рублей. Из них:
-								div 
-									p #[span.accent 462 ] заказа с сайта Дионикс на Пульсе цен
-									p #[span.accent 40 ] сообщений в мессенджер
-									p #[span.accent 32 ] заявки по телефону
+							<iframe class="item__reviews" width="560" src="https://www.youtube.com/v/_K23P2Kkrqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						.block__item 
-							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/312456/content_maxresdefault_1_1.png", alt="")
-							.item__heading.accent НАЗВАНИЕ КОМПАНИИ
-							.item__subtitle 10 лет компания размещает свои товары в каталоге Пульса цен С 2019 года подключен платный тариф «Старт.Серебро».
-							.item__resalt.fat Результаты
-							.item__offer 
-								p За 2021 год компания получила 534 заказа с Пульса цен на общую сумму 2,6 млн. рублей. Из них:
-								div 
-									p #[span.accent 462 ] заказа с сайта Дионикс на Пульсе цен
-									p #[span.accent 40 ] сообщений в мессенджер
-									p #[span.accent 32 ] заявки по телефону
-						
-		//- include ./modules/footer.pug
-		include ./modules/modalStroyCapital.pug
+							<iframe class="item__reviews" width="560" src="https://www.youtube.com/v/iFAYDuPkuM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.block__item 
+							<iframe class="item__reviews" width="560" src="https://www.youtube.com/v/c2Mg-k903Yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+						.block__item 
+							<iframe class="item__reviews" width="560" src="https://www.youtube.com/v/c-DZjFeqcOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.block__item 
+							<iframe class="item__reviews" width="560"  src="https://www.youtube.com/v/y2QMZFobjjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.block__item 
+							<iframe class="item__reviews" width="560" src="https://www.youtube.com/v/6Lx5kUYqHPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.block__item 
+							<iframe  class="item__reviews" width="560" src="https://www.youtube.com/v/NROul-Tak9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						.block__item 
+							<iframe class="item__reviews" width="560" src="https://www.youtube.com/v/GvgKZJKHOt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			//- инструкция
+			section.sectionTab.instruction(data-tab = 'instruction') 
+				.content 
+					.blog__wrapper 
+						.instruction_themes.theme
+							p.theme__heading.section_h3 Темы
+							.theme__desktop(data-content="instruction")
+								.theme__item(id='saleInstruction' href='#sale') Про увеличение продаж
+								.theme__item(id='onlineInstruction') Про онлайн-сервисы
+								.theme__item(id='siteInstruction') Про сайт
+								.theme__item(id='workClientInstruction') Про работу с клиентами
+								.theme__item(id='tradingFloorInstruction') Про торговые площадки
+								.theme__item(id='yandexInstruction') Про продвижение в Яндексе
+							.theme__mobile
+								.select__dropdown
+									.dropdown__title(value='saleInstruction' ) Про увеличение продаж
+									.dropdown__option(data-content="instruction")
+										.option__item(value='saleInstruction' ) Про увеличение продаж
+										.option__item(value='onlineInstruction') Про онлайн-сервисы
+										.option__item(value='siteInstruction') Про сайт
+										.option__item(value='workClientInstruction') Про работу с клиентами
+										.option__item(value='tradingFloorInstruction') Про торговые площадки
+										.option__item(value='yandexInstruction') Про продвижение в Яндексе
+
+						.blog_article.article
+							p.article__heading.section_h2 Инструкции по работе с Пульсом Цен
+							p.article__subtitle Полезные идеи для развития бизнеса. Читайте. Применяйте. Получайте результат.
+							.instructionVideo__theme#theme
+								.instructionThemeBlock(data-theme="saleInstruction")
+									.theme__heading.section_h3 Про увеличение продаж
+									.theme__block
+										.block__item
+											.item__img 
+												<iframe  class="item__instruction" width="560" src="https://www.youtube.com/v/HOthCwFdQ8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading Мария Алюханова: Про Товарное сопровождение
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='1')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='1')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+										.block__item
+											.item__img 
+												<iframe class="item__instruction" width="300" src="https://www.youtube.com/v/TnWeAiSVgho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading Добро пожаловать на Старт!
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='2')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='2')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+										.block__item(href='#' target="_blank")
+											.item__img
+												<iframe class="item__instruction" width="300"  src="https://www.youtube.com/v/uCZXs0fIMI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading Про услугу «Вся Россия»
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='3')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='3')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+										.block__item(href='#' target="_blank")
+											.item__img 
+												<iframe class="item__instruction" width="300" src="https://www.youtube.com/v/LhJeGaEibiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading Сколько пользователей в вашем ЛК на ПЦ
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='4')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='4')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+										.block__item(href='#' target="_blank")
+											.item__img 
+												<iframe class="item__instruction" width="300" src="https://www.youtube.com/v/LIivjwNNj-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading Отзывы, которые продают
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='5')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='5')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+										.block__item(href='#' target="_blank")
+											.item__img
+												<iframe class="item__instruction" width="300" src="https://www.youtube.com/v/s-MFZBT5e9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading бэкстедж про Синхронизацию ЛК ПЦ с Батрика 24
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='6')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='6')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+										.block__item(href='#' target="_blank")
+											.item__img 
+												<iframe class="item__instruction" width="300" src="https://www.youtube.com/v/pa10DDQVrdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											.item__heading 5 секретов ЛК
+											.item__timing 
+												.timing__header
+													.header_plank(data-timeButton='7')
+													.header__title Тайминг
+													.header__button
+														.button__false
+												.timing__time(data-time='7')
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+													p 00:00 - вступление
+								.instructionThemeBlock(data-theme="onlineInstruction")
+									.theme__heading.section_h3 Про онлайн-сервисы
+								.instructionThemeBlock(data-theme="siteInstruction")
+									.theme__heading.section_h3 Про сайт
+								.instructionThemeBlock(data-theme="workClientInstruction")
+									.theme__heading.section_h3 Про работу с клиентами
+								.instructionThemeBlock(data-theme="tradingFloorInstruction")
+									.theme__heading.section_h3 Про торговые площадки
+								.instructionThemeBlock(data-theme="yandexInstruction")
+									.theme__heading.section_h3 Про продвижение в Яндексе
+			//- include ./modules/footer.pug
+			include ./modules/modalStroyCapital.pug
 	//- p {crm_analytics:show_page(network_actions,НК_Оставить_товары_curData)}

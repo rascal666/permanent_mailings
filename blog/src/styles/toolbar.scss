@@ -21,6 +21,9 @@
 			min-width: 200px;
 		}
 	}
+	.logo__wrapper {
+		fill: $forToolbar !important;
+	}
 	.text {
 		max-width: 628px;
 		margin-right: 30px;
@@ -48,6 +51,56 @@
 			@include grid(15px, auto auto auto);
 			align-items: center;
 		}
+		.toolbar__mobil {
+			display: none;
+			.section-buttonToolbar {
+				display: grid;
+				grid-column: 1/5;
+				grid-row: 2;
+			}
+			.mobil__burger {
+				display: none;
+				position: absolute;
+				background: #ffffff;
+				top: 76px;
+				left: 0;
+				right: 0;
+				padding: 24px;
+				justify-content: right;
+				text-align: right;
+				grid-gap: 16px;
+				grid-auto-flow: column;
+				justify-content: start;
+				a,
+				svg {
+					max-width: 40px;
+					width: 100%;
+					fill: $corporate_color !important;
+				}
+			}
+			.mobil__burger_active {
+				display: grid;
+			}
+
+			.mobil__icon {
+				max-width: 18px;
+			}
+			.mobil__icon:hover {
+				cursor: pointer;
+				animation: modilIcon 0.5s infinite linear;
+			}
+			@keyframes modilIcon {
+				0% {
+					transform: rotate(0deg);
+				}
+				50% {
+					transform: rotate(10deg);
+				}
+				100% {
+					transform: rotate(0deg);
+				}
+			}
+		}
 		.toolbar__icon {
 			display: flex;
 			max-width: max-content;
@@ -58,16 +111,24 @@
 				fill: $forToolbar !important;
 			}
 		}
-		.toolbar__tab {
+		.tab__menu {
+			top: 70px;
 			color: $main_text_color;
-			@include grid(calc(var(--block) - 20px), 1fr 1fr 1fr);
+			@include grid(calc(var(--block) - 20px), repeat(4, 0.1fr));
 			font-weight: 700;
-			.tab__item {
+			.menu__item {
 				padding: 5px 20px;
 				font-size: 22px;
 				justify-self: self-end;
 			}
-			.tab__item:hover {
+			.menu__item:hover {
+				color: $corporate_color;
+				padding: 5px 20px;
+				background: #028dd82d;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+			.menu__item_active {
 				color: $corporate_color;
 				padding: 5px 20px;
 				background: #028dd82d;
@@ -83,6 +144,14 @@
 	}
 	.logo {
 		width: 150px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.toolbar-rascal .toolbar__block .tab__menu .menu__item {
+		padding: 5px 20px;
+		font-size: 16px;
+		justify-self: self-end;
 	}
 }
 
@@ -128,6 +197,12 @@
 			.toolbar__feedback {
 				grid-template-columns: auto auto;
 			}
+			.tab__menu {
+				.menu__item {
+					padding: 5px 8px;
+					font-size: 14px;
+				}
+			}
 		}
 		.toolbar__icon {
 			display: flex;
@@ -144,16 +219,82 @@
 
 @media (max-width: 800px) {
 	.toolbar-rascal {
-		padding: 20px 0;
+		padding: 20px 0 !important;
+		.toolbar__block {
+			align-items: baseline;
+			.toolbar__feedback {
+				order: 3;
+			}
+			.toolbar__mobil {
+				display: block;
+			}
+			.toolbar__icon {
+				display: none;
+			}
+			.section-buttonToolbar {
+				display: none;
+			}
+			.tab__menu {
+				display: none;
+				.menu__item {
+					text-align: left;
+					justify-self: auto;
+					transition: padding 0.5s ease;
+				}
+			}
+			.tab__menu_active {
+				display: grid;
+				grid-template-columns: auto;
+				justify-content: start;
+				grid-gap: 8px;
+				position: absolute;
+				background: white;
+				right: 0;
+				left: 0;
+				padding-bottom: 16px;
+				padding-left: 24px;
+				padding-top: 16px;
+				box-shadow: 0px 9px 10px 0px #e4eff76b;
+			}
+			.tab__burger {
+				display: grid;
+				grid-gap: 4px;
+				top: -15px;
+				position: relative;
+				.burger__line {
+					width: 20px;
+					height: 2px;
+					background: #0d5490;
+					transition: all 1s ease;
+				}
+			}
+			.tab__burger_active {
+				.burger__line_center {
+					display: none;
+				}
+				.burger__line_top {
+					transform: rotateZ(135deg);
+					position: relative;
+					top: 6px;
+				}
+				.burger__line_bottom {
+					transform: rotateZ(-135deg);
+					position: relative;
+					top: 0px;
+				}
+			}
+			.tab__burger:hover {
+				cursor: pointer;
+			}
+		}
+		.logo__wrapper {
+			order: 2;
+		}
 		.heading {
 			font-size: 24px;
 		}
 	}
 	.logo {
 		width: 147px !important	;
-	}
-	.logo__wrapper {
-		width: 26px;
-		overflow: hidden;
 	}
 }

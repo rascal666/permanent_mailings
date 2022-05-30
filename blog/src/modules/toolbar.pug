@@ -16,11 +16,23 @@ section.toolbar-rascal
 					path(d='M69.2011 4.09009C69.4891 4.09009 69.7227 4.32362 69.7227 4.61171V18.7086C69.7227 18.9967 69.4891 19.2302 69.2011 19.2302H66.6293C66.3412 19.2302 66.1077 18.9967 66.1077 18.7086V7.87777C66.1077 7.58721 65.8703 7.35266 65.5797 7.35619L62.9816 7.38783C62.7112 7.39112 62.4886 7.60056 62.4661 7.87C62.4623 7.91545 62.4586 7.95843 62.4552 7.99581C62.3141 9.56103 62.1495 11.0312 61.9613 12.4062C61.7888 13.7666 61.5301 14.9003 61.1852 15.8073C60.8402 16.7142 60.3104 17.4571 59.7145 18.013C59.2103 18.4962 58.3684 18.9375 57.642 19.1503C57.4493 19.2068 57.2463 19.1285 57.1249 18.9685L55.5359 16.8745C55.3451 16.6231 55.4229 16.2674 55.6958 16.109C55.8684 16.0088 56.045 15.8978 56.2226 15.7634C56.7032 15.3994 57.0294 15.1204 57.3235 14.6813C57.6176 14.2422 58.0187 13.086 58.1799 12.0332C58.3524 10.9068 58.3599 9.54195 58.5008 7.64045C58.6003 6.29727 58.6181 4.09009 58.6181 4.09009H62.2906H69.2011Z' )
 
 			.toolbar__tab.tab 
-				.tab__item#blog Блог
-				.tab__item#cases Кейсы
-				.tab__item#reviews Отзывы
+				.tab__burger
+					.burger__line.burger__line_top
+					.burger__line.burger__line_center
+					.burger__line.burger__line_bottom
+				.tab__menu 
+					.menu__item.menu__item_active#blog Блог
+					.menu__item#cases Кейсы
+					.menu__item#reviews Отзывы
+					.menu__item#instruction Инструкции
 
 			.toolbar__feedback
 				.toolbar__icon
 					+linkMassagers
+				.toolbar__mobil 
+					img.mobil__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/330711/content_vector.png", alt="")
+					.mobil__burger 
+						+linkMassagers
+						+button("Позвоните мне", "Позвоните мне", "section-buttonToolbar" )
+					
 				+button("Позвоните мне", "Позвоните мне", "section-buttonToolbar" )
