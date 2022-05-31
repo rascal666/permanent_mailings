@@ -197,7 +197,6 @@ toolbarRascal.addEventListener('click', e => {
 
     }
     if (e.target.classList.contains('mobil__icon') == true) {
-        console.log(e.target);
         tabMenu.classList.remove('tab__menu_active')
         tabBurger.classList.remove('tab__burger_active')
     }

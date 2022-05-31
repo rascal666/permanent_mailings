@@ -366,11 +366,15 @@
 		display: grid;
 		grid-gap: var(--block);
 		grid-template-columns: 1fr 1fr;
+		.item__title {
+			font-weight: 700;
+			margin: 20px 0 10px;
+		}
 	}
 	.block__item {
 		position: relative;
 		padding-bottom: 55.5%;
-		padding-top: 25px;
+		// padding-top: 25px;
 		height: 315px;
 		animation: animReviewsVideo 0.5s ease;
 		.item__reviews {
