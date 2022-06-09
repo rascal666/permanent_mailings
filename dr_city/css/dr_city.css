@@ -372,6 +372,10 @@ header .toolbar .toolbar__icon {
   }
   header .img-ill {
     margin-left: 557px;
+    width: auto;
+  }
+  header .img-ill img {
+    height: 100%;
   }
   .section-buttonWhite {
     font-size: 12px;

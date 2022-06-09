@@ -54,6 +54,16 @@ class Ondata {
             sochi_pay: '8 800 100 91 91',
             krim: '8 800 234 43 10',
             krim_pay: '8 800 100 91 91',
+            simferopl: '8 800 234 43 10',
+            simferopl_pay: '8 800 100 91 91',
+            sevastopl: '8 800 234 43 10',
+            sevastopl_pay: '8 800 100 91 91',
+            novosib: '8 800 234 43 10',
+            novosib_pay: '8 800 100 91 91',
+            ufa: '8 800 234 43 10',
+            ufa_pay: '8 800 100 91 91',
+            perm: '8 800 234 43 10',
+            perm_pay: '8 800 100 91 91',
 
         };
 
@@ -81,6 +91,16 @@ class Ondata {
             sochi_pay: 'tel:88001009191',
             krim: 'tel:88002344310',
             krim_pay: 'tel:88001009191',
+            simferopl: 'tel:88002344310',
+            simferopl_pay: 'tel:88001009191',
+            sevastopl: 'tel:88002344310',
+            sevastopl_pay: 'tel:88001009191',
+            novosib: 'tel:88002344310',
+            novosib_pay: 'tel:88001009191',
+            ufa: 'tel:88002344310',
+            ufa_pay: 'tel:88001009191',
+            perm: 'tel:88002344310',
+            perm_pay: 'tel:88001009191',
         };
         // подписи к номерам телефонов стран
         this.generalNote = {
@@ -107,6 +127,16 @@ class Ondata {
             sochi_pay: 'Сочи',
             krim: 'Крым',
             krim_pay: 'Крым',
+            simferopl: 'Симферополь',
+            simferopl_pay: 'Симферополь',
+            sevastopl: 'Севастополь',
+            sevastopl_pay: 'Севастополь',
+            novosib: 'Новосибирск',
+            novosib_pay: 'Новосибирск',
+            ufa: 'Уфа',
+            ufa_pay: 'Уфа',
+            perm: 'Пермь',
+            perm_pay: 'Пермь',
 
         };
         // события для разных стран
@@ -134,6 +164,16 @@ class Ondata {
             sochi_pay: '_Сочи-ПП_',
             krim: '_Крым_',
             krim_pay: '_Крым_',
+            simferopl: '_Симферополь_',
+            simferopl_pay: '_Симферополь_',
+            sevastopl: '_Севастополь_',
+            sevastopl_pay: '_Севастополь_',
+            novosib: '_Новосибирск_',
+            novosib_pay: '_Новосибирск_',
+            ufa: '_Уфа_',
+            ufa_pay: '_Уфа_',
+            perm: '_Пермь_',
+            perm_pay: '_Пермь_',
 
 
         };
@@ -162,6 +202,16 @@ class Ondata {
             sochi_pay: '99560299',
             krim: '99572059',
             krim_pay: '99560299',
+            simferopl: '99572059',
+            simferopl_pay: '99560299',
+            sevastopl: '99572059',
+            sevastopl_pay: '99560299',
+            novosib: '99572059',
+            novosib_pay: '99560299',
+            ufa: '99572059',
+            ufa_pay: '99560299',
+            perm: '99572059',
+            perm_pay: '99560299',
 
 
         };
@@ -189,6 +239,16 @@ class Ondata {
             sochi_pay: 'ПП_',
             krim: 'НК_',
             krim_pay: 'ПП_',
+            simferopl: 'НК_',
+            simferopl_pay: 'ПП_',
+            sevastopl: 'НК_',
+            sevastopl_pay: 'ПП_',
+            novosib: 'НК_',
+            novosib_pay: 'ПП_',
+            ufa: 'НК_',
+            ufa_pay: 'ПП_',
+            perm: 'НК_',
+            perm_pay: 'ПП_',
         };
         // аттребуты
         this.dataId = [
@@ -220,6 +280,16 @@ class Ondata {
             sochi_pay: 'https://support.pulscen.ru/',
             krim: 'https://help.pulscen.ru/',
             krim_pay: 'https://support.pulscen.ru/',
+            simferopl: 'https://help.pulscen.ru/',
+            simferopl_pay: 'https://support.pulscen.ru/',
+            sevastopl: 'https://help.pulscen.ru/',
+            sevastopl_pay: 'https://support.pulscen.ru/',
+            novosib: 'https://help.pulscen.ru/',
+            novosib_pay: 'https://support.pulscen.ru/',
+            ufa: 'https://help.pulscen.ru/',
+            ufa_pay: 'https://support.pulscen.ru/',
+            perm: 'https://help.pulscen.ru/',
+            perm_pay: 'https://support.pulscen.ru/',
 
         };
         //название компании
@@ -247,6 +317,16 @@ class Ondata {
             sochi_pay: 'Пульс Цен - Техническая поддержка',
             krim: 'Пульс цен Онлайн',
             krim_pay: 'Пульс Цен - Техническая поддержка',
+            simferopl: 'Пульс цен Онлайн',
+            simferopl_pay: 'Пульс Цен - Техническая поддержка',
+            sevastopl: 'Пульс цен Онлайн',
+            sevastopl_pay: 'Пульс Цен - Техническая поддержка',
+            novosib: 'Пульс цен Онлайн',
+            novosib_pay: 'Пульс Цен - Техническая поддержка',
+            ufa: 'Пульс цен Онлайн',
+            ufa_pay: 'Пульс Цен - Техническая поддержка',
+            perm: 'Пульс цен Онлайн',
+            perm_pay: 'Пульс Цен - Техническая поддержка',
         }
 
         this.dataImg = {
@@ -273,6 +353,16 @@ class Ondata {
             sochi_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/289129/content_sochi.png',
             krim: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/298820/content_frame_1154.png',
             krim_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/298820/content_frame_1154.png',
+            simferopl: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/331065/content_illyustratsiya.png',
+            simferopl_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/331065/content_illyustratsiya.png',
+            sevastopl: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/331066/content_sevastopol.png',
+            sevastopl_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/331066/content_sevastopol.png',
+            novosib: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/332340/content_illyustratsviya.png',
+            novosib_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/332340/content_illyustratsviya.png',
+            ufa: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/332341/content_illyustratsiya.png',
+            ufa_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/332341/content_illyustratsiya.png',
+            perm: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/333133/content_perm.png',
+            perm_pay: 'https://www.pulscen.ru/system/ckeditor_assets/pictures/333133/content_perm.png',
         }
 
         // берем элемент который передали в конструкторе
@@ -300,7 +390,7 @@ class Ondata {
         if (_dom) {
             //меняем значение событий
             _dom.innerHTML = _dom.innerHTML.replace(/_РФ_/gi, this.generalEvent[this.utm.utm_rascal])
-            _dom.innerHTML = _dom.innerHTML.replace(/_НК_/gi, this.NP[this.utm.utm_rascal])
+            _dom.innerHTML = _dom.innerHTML.replace(/НК_/gi, this.NP[this.utm.utm_rascal])
 
             // если в списке с номерами есть подходящий под параметр номер то
             if (this.generalNumbers[this.utm.utm_rascal]) {
